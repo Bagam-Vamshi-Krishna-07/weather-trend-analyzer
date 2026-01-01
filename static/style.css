@@ -1,0 +1,4 @@
+/* static/style.css */
+body { font-family: Arial, Helvetica, sans-serif; }
+.card { box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.table { font-size: 0.9rem; }

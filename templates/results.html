@@ -1,0 +1,17 @@
+<!-- templates/results.html -->
+{% extends "base.html" %}
+{% block content %}
+  <div class="mb-3">
+    <a href="{{ url_for('index') }}" class="btn btn-light">New query</a>
+    <a href="{{ url_for('download_csv') }}?city={{ city }}&days={{ days }}" class="btn btn-success">Download CSV</a>
+  </div>
+
+  <h4>{{ city }} — Past {{ days }} days</h4>
+  <div class="card mb-3 p-3">
+    <img src="{{ plot_data }}" alt="plot" class="img-fluid" />
+  </div>
+
+  <div class="card p-3">
+    {{ table_html | safe }}
+  </div>
+{% endblock %}

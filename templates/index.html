@@ -1,0 +1,19 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+{% block content %}
+  <div class="card p-4">
+    <form method="post" class="row g-3">
+      <div class="col-md-8">
+        <label class="form-label">City</label>
+        <input name="city" class="form-control" placeholder="Enter city e.g. Paris" required>
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Days</label>
+        <input name="days" type="number" class="form-control" value="7" min="1" max="365" required>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary">Show Trends</button>
+      </div>
+    </form>
+  </div>
+{% endblock %}
